@@ -280,14 +280,436 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                     <!-- 404 Error Text -->
-                     <div class="text-center">
-                        <div class="error mx-auto" data-text="Em breve">Em</div>
-                        <div class="error mx-auto" data-text="Breve">Breve</div>
-                        <p class="lead text-gray-800 mb-5">Essa funcionalidade ainda está em desenvolvimento</p>
-                        <p class="text-gray-500 mb-0">Ela ainda não foi desenvolvida porque não faz parte do nosso MVP.</p>
-                        <a href="index.html">&larr; Voltar ao ínicio</a>
-                    </div>
+                     <!-- Começo tabela -->
+                     <h1 class="h3 mb-2 text-gray-800">Cruzamento de dados base e base 2</h1>
+                     <p class="mb-4"> A última coluna representa a probablidade das pessoas comparadas serem iguais.</p>
+ 
+                     <!-- DataTales Example -->
+                     <div class="card shadow mb-4">
+                         <div class="card-header py-3">
+                             <h6 class="m-0 font-weight-bold text-primary">Cruzamento de dados Sivep e E-sus</h6>
+                         </div>
+                         <div class="card-body">
+                             <div class="table-responsive">
+                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                     <thead>
+                        <tr><th title="Field #1">Código base 1</th>
+                        <th title="Field #2">Nome 1</th>
+                        <th title="Field #3">Nome da Mãe 1</th>
+                        <th title="Field #4">Nome 2</th>
+                        <th title="Field #5">Nome da Mãe 2</th>
+                        <th title="Field #6">Estado 1</th>
+                        <th title="Field #7">Estado 2</th>
+                        <th title="Field #8">Probabilidade linkage</th>
+                        </tr></thead>
+                        <tbody><tr>
+                        <td align="right">2284</td>
+                        <td>Maria Chaves</td>
+                        <td>Antonia Chaves Santos</td>
+                        <td>Maria Chaves</td>
+                        <td>Antonia Chaves Santos</td>
+                        <td>AM</td>
+                        <td>AM</td>
+                        <td align="right">0.997401</td>
+                        </tr>
+                        <tr>
+                        <td align="right">5217</td>
+                        <td>Maria Crispim de Amorim</td>
+                        <td>Maria </td>
+                        <td>Maria Crispim de Amorim</td>
+                        <td>Maria </td>
+                        <td>SC</td>
+                        <td>SC</td>
+                        <td align="right">0.997401</td>
+                        </tr>
+                        <tr>
+                        <td align="right">6</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Maria Ferraz Novaes</td>
+                        <td>Solange Ferraz</td>
+                        <td>PE</td>
+                        <td>ES</td>
+                        <td align="right">5e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">1655</td>
+                        <td>Rogério Veloso</td>
+                        <td>Marta Veloso Benevides</td>
+                        <td>Rogério Veloso</td>
+                        <td>Marta Veloso Benevides</td>
+                        <td>PA</td>
+                        <td>PA</td>
+                        <td align="right">0.997529</td>
+                        </tr>
+                        <tr>
+                        <td align="right">12</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Joao Faustino</td>
+                        <td>Simone Faustino</td>
+                        <td>PE</td>
+                        <td>RS</td>
+                        <td align="right">1.1e-05</td>
+                        </tr>
+                        <tr>
+                        <td align="right">2707</td>
+                        <td>Antonio Marins</td>
+                        <td>Maria Marins</td>
+                        <td>Antonio Marins</td>
+                        <td>Maria Marins</td>
+                        <td>RS</td>
+                        <td>RS</td>
+                        <td align="right">0.99711</td>
+                        </tr>
+                        <tr>
+                        <td align="right">4345</td>
+                        <td>Maria Figueiredo Lira</td>
+                        <td>Marlene Figueiredo Conceicao</td>
+                        <td>Maria Figueiredo Lira</td>
+                        <td>Marlene Figueiredo Conceicao</td>
+                        <td>MG</td>
+                        <td>MG</td>
+                        <td align="right">0.997299</td>
+                        </tr>
+                        <tr>
+                        <td align="right">2538</td>
+                        <td>Ana Dutra</td>
+                        <td>Vera Dutra Telles</td>
+                        <td>Ana Dutra</td>
+                        <td>Vera Dutra Telles</td>
+                        <td>PE</td>
+                        <td>PE</td>
+                        <td align="right">0.997401</td>
+                        </tr>
+                        <tr>
+                        <td align="right">5447</td>
+                        <td>João Britto Lira de Morais</td>
+                        <td>Maria Lira</td>
+                        <td>João Britto Lira de Morais</td>
+                        <td>Maria Lira</td>
+                        <td>MG</td>
+                        <td>MG</td>
+                        <td align="right">0.99711</td>
+                        </tr>
+                        <tr>
+                        <td align="right">4</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Maria Matos</td>
+                        <td>Adriana Matos Arruda</td>
+                        <td>PE</td>
+                        <td>GO</td>
+                        <td align="right">4e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">1</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Carlos Galvao</td>
+                        <td>Maria Galvao</td>
+                        <td>PE</td>
+                        <td>SE</td>
+                        <td align="right">2e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">1853</td>
+                        <td>Eduardo do Livramento</td>
+                        <td>Francisca do Livramento</td>
+                        <td>Eduardo do Livramento</td>
+                        <td>Francisca do Livramento</td>
+                        <td>BA</td>
+                        <td>BA</td>
+                        <td align="right">0.997472</td>
+                        </tr>
+                        <tr>
+                        <td align="right">14</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Luzia Peres de Morais Freire</td>
+                        <td>Edna de Morais de Franca</td>
+                        <td>PE</td>
+                        <td>SP</td>
+                        <td align="right">0.0</td>
+                        </tr>
+                        <tr>
+                        <td align="right">99</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>PE</td>
+                        <td>PE</td>
+                        <td align="right">0.99694</td>
+                        </tr>
+                        <tr>
+                        <td align="right">11</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Maria Galvao</td>
+                        <td>Adriana Galvao</td>
+                        <td>PE</td>
+                        <td>MG</td>
+                        <td align="right">1.2e-05</td>
+                        </tr>
+                        <tr>
+                        <td align="right">3126</td>
+                        <td>Francisco Nonato Feliciano</td>
+                        <td>Vilma </td>
+                        <td>Francisco Nonato Feliciano</td>
+                        <td>Vilma </td>
+                        <td>RS</td>
+                        <td>RS</td>
+                        <td align="right">0.997545</td>
+                        </tr>
+                        <tr>
+                        <td align="right">5</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Raimundo Florencio Flor</td>
+                        <td>Maria Carolino</td>
+                        <td>PE</td>
+                        <td>RS</td>
+                        <td align="right">1e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">0</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Aparecida Trindade Fontes Pontes Mariano</td>
+                        <td>Maria Trindade Fontes</td>
+                        <td>PE</td>
+                        <td>PR</td>
+                        <td align="right">0.0</td>
+                        </tr>
+                        <tr>
+                        <td align="right">19</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Maria Cesar Amorim</td>
+                        <td>Celia Cesar</td>
+                        <td>PE</td>
+                        <td>MG</td>
+                        <td align="right">7.7e-05</td>
+                        </tr>
+                        <tr>
+                        <td align="right">2</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Francisco Rabello</td>
+                        <td>Ana Rabello Soares da Silva</td>
+                        <td>PE</td>
+                        <td>SC</td>
+                        <td align="right">2e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">6482</td>
+                        <td>Francisca Feitosa Evangelista da Gloria Matias</td>
+                        <td>Maria Feitosa Evangelista Lopes da Silva</td>
+                        <td>Francisca Feitosa Evangelista da Gloria Matias</td>
+                        <td>Maria Feitosa Evangelista Lopes da Silva</td>
+                        <td>MG</td>
+                        <td>MG</td>
+                        <td align="right">0.997401</td>
+                        </tr>
+                        <tr>
+                        <td align="right">8</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Antonio Quadros Prata de Sa</td>
+                        <td>Maria Quadros</td>
+                        <td>PE</td>
+                        <td>SC</td>
+                        <td align="right">2e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">7094</td>
+                        <td>Maria Bastos</td>
+                        <td>Sueli Bastos</td>
+                        <td>Maria Bastos</td>
+                        <td>Sueli Bastos</td>
+                        <td>PB</td>
+                        <td>PB</td>
+                        <td align="right">0.997323</td>
+                        </tr>
+                        <tr>
+                        <td align="right">3</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Daniel de Siqueira de Jesus da Silva</td>
+                        <td>Ana da Silva</td>
+                        <td>PE</td>
+                        <td>PR</td>
+                        <td align="right">1e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">18</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Maria Franca Trajano</td>
+                        <td>Roseli Tome</td>
+                        <td>PE</td>
+                        <td>PI</td>
+                        <td align="right">3e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">1234</td>
+                        <td>JosÃ© Barreto Fischer</td>
+                        <td>Maria Ruas</td>
+                        <td>JosÃ© Barreto Fischer</td>
+                        <td>Maria Ruas</td>
+                        <td>PR</td>
+                        <td>PR</td>
+                        <td align="right">0.99711</td>
+                        </tr>
+                        <tr>
+                        <td align="right">918</td>
+                        <td>Maria Franca Trajano</td>
+                        <td>Roseli Tome</td>
+                        <td>Maria Franca Trajano</td>
+                        <td>Roseli Tome</td>
+                        <td>PI</td>
+                        <td>PI</td>
+                        <td align="right">0.99694</td>
+                        </tr>
+                        <tr>
+                        <td align="right">4876</td>
+                        <td>Maria do Rosario Henrique da Silva de Matos</td>
+                        <td>Ivone da Silva de Matos</td>
+                        <td>Maria do Rosario Henrique da Silva de Matos</td>
+                        <td>Ivone da Silva de Matos</td>
+                        <td>RO</td>
+                        <td>RO</td>
+                        <td align="right">0.99694</td>
+                        </tr>
+                        <tr>
+                        <td align="right">4628</td>
+                        <td>Paulo Neres de Brito</td>
+                        <td>Maria Neres</td>
+                        <td>Paulo Neres de Brito</td>
+                        <td>Maria Neres</td>
+                        <td>PA</td>
+                        <td>PA</td>
+                        <td align="right">0.997435</td>
+                        </tr>
+                        <tr>
+                        <td align="right">7</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Antonio Marins</td>
+                        <td>Maria Marins</td>
+                        <td>PE</td>
+                        <td>RS</td>
+                        <td align="right">1e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">15</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Jorge Bento Camara</td>
+                        <td>Maria Bento</td>
+                        <td>PE</td>
+                        <td>SC</td>
+                        <td align="right">3e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">9</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Jurandir de Lourdes Ferreira</td>
+                        <td>Maria </td>
+                        <td>PE</td>
+                        <td>RR</td>
+                        <td align="right">5e-06</td>
+                        </tr>
+                        <tr>
+                        <td align="right">6147</td>
+                        <td>Sandra Das Gracas Peixoto</td>
+                        <td>Maria Gracas Peixoto</td>
+                        <td>Sandra Das Gracas Peixoto</td>
+                        <td>Maria Gracas Peixoto</td>
+                        <td>PR</td>
+                        <td>PR</td>
+                        <td align="right">0.997401</td>
+                        </tr>
+                        <tr>
+                        <td align="right">5851</td>
+                        <td>Marilene Rodrigues da Silva da Rosa</td>
+                        <td>Maria Rodrigues do Couto</td>
+                        <td>Marilene Rodrigues da Silva da Rosa</td>
+                        <td>Maria Rodrigues do Couto</td>
+                        <td>PB</td>
+                        <td>PB</td>
+                        <td align="right">0.997299</td>
+                        </tr>
+                        <tr>
+                        <td align="right">16</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Flavio Marinho de Camargo Penha</td>
+                        <td>Aparecida de Camargo Penha Honorio</td>
+                        <td>PE</td>
+                        <td>SP</td>
+                        <td align="right">0.0</td>
+                        </tr>
+                        <tr>
+                        <td align="right">10</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Carlos Fagundes</td>
+                        <td>Maria Fagundes</td>
+                        <td>PE</td>
+                        <td>SC</td>
+                        <td align="right">0.0</td>
+                        </tr>
+                        <tr>
+                        <td align="right">4053</td>
+                        <td>Jose Silvestre Firmino</td>
+                        <td>Roseli Firmino Aguiar</td>
+                        <td>Jose Silvestre Firmino</td>
+                        <td>Roseli Firmino Aguiar</td>
+                        <td>MG</td>
+                        <td>MG</td>
+                        <td align="right">0.997545</td>
+                        </tr>
+                        <tr>
+                        <td align="right">312</td>
+                        <td>Joao Faustino</td>
+                        <td>Simone Faustino</td>
+                        <td>Joao Faustino</td>
+                        <td>Simone Faustino</td>
+                        <td>RS</td>
+                        <td>RS</td>
+                        <td align="right">0.997506</td>
+                        </tr>
+                        <tr>
+                        <td align="right">13</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>Vera Cassiano Vasconcelos Venancio</td>
+                        <td>Maria Venancio</td>
+                        <td>PE</td>
+                        <td>CE</td>
+                        <td align="right">0.0</td>
+                        </tr>
+                        <tr>
+                        <td align="right">17</td>
+                        <td>Maria Ramires</td>
+                        <td>Rita Ramires</td>
+                        <td>JoÃ£o de Queiroz Das Gracas Simplicio Amaral</td>
+                        <td>Vera de Queiroz das Gracas</td>
+                        <td>PE</td>
+                        <td>SC</td>
+                        <td align="right">0.0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>  
+
+                     <!--Fim Tabela -->
+                     
 
               
                 <!-- /.container-fluid -->
