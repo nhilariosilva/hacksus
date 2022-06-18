@@ -1,0 +1,29 @@
+
+
+Esse é João da Silva, um agricultor nascido em uma pacata região rural no interior do sertão, onde ele vive desde então. E essa é
+Marcela, uma pesquisadora do ministério da saúde que trabalha com o desenvlvimento de políticas públicas destinadas à divulgação de informações relacionadas ao covid 19.
+
+Imagine a seguinte situação, João se direciona ao atendimento médico público da região com queixas de dor de cabeça, falta de ar
+e estado febril. Seria possível que João contraiu covid 19? Como forma preventiva, João é cadastrado no sistema do ESUS notifica como caso
+suspeito.
+
+Dias depois João precisa ser internado na UTI da região devido à síndrome respiratória aguda... Infelizmente seu teste para covid foi positivo. Assim, João é cadastrado em outro sistema, o Sivep Gripe para SRAG (Síndrome Respiratória Aguda).
+
+Mas temos um problema aqui: João não tem CPF registrado e nunca teve a oportunidade de efetuar um cadastro no SUS... Como Marcela pode comprovar com exatidão que o mesmo João da Silva, cadastrado no ESUS notifica, é o mesmo João da Silva, agora internado em estado grave???
+
+
+É aí que entra o IntegraSUS: o primeiro passo para uma unificação inteligente e metódica dos sistemas de saúde. Através do uso de metodologias de aprendizado de máquina, procuramos integrar bases de dados de diferentes sistemas do SUS mesmo sem contar com informações essenciais como o documento do indivíduo, usando dados de endereço, nome da mãe, 	data de nascimento...
+
+
+Com a plataforma Integra SUS procuramos unificar diferentes bases do SUS de forma automática e sem muitas complicações, de modo a popupar todo o trabalho de Marcela com a linkagem dessas informações. Tarefa que muitas vezes leva meses.
+
+
+### Videzinho explicando como entrar no site e fazer tudo
+
+
+Dessa forma, Marcela consegue informações precisas em um curto período de tempo. E como sabemos, tempo é vida quando o assunto é saúde!
+
+
+
+
+

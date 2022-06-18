@@ -16,7 +16,6 @@ class Paciente(object):
     DT_NASC : str
     CS_SEXO : int
     CS_RACA : int
-    NU_CEP : str
     SG_UF_NOT : str
     ID_MUNICIP : str
     NM_LOGRADO : str
@@ -24,7 +23,7 @@ class Paciente(object):
     NM_BAIRRO : str
     NM_COMPLEM : str
     
-    def __init__(self, TEM_CPF, NU_CPF, TEM_CNS, NU_CNS, NM_PACIENT, NM_MAE_PAC, DT_NASC, CS_SEXO, CS_RACA, NU_CEP, SG_UF_NOT, ID_MUNICIP, NM_LOGRADO, NU_NUMERO, NM_BAIRRO, NM_COMPLEM):
+    def __init__(self, TEM_CPF, NU_CPF, TEM_CNS, NU_CNS, NM_PACIENT, NM_MAE_PAC, DT_NASC, CS_SEXO, CS_RACA, SG_UF_NOT, ID_MUNICIP, NM_LOGRADO, NU_NUMERO, NM_BAIRRO, NM_COMPLEM):
         self.TEM_CPF = TEM_CPF
         self.NU_CPF = NU_CPF
         self.TEM_CNS = TEM_CNS
@@ -34,7 +33,6 @@ class Paciente(object):
         self.DT_NASC = DT_NASC
         self.CS_SEXO = CS_SEXO
         self.CS_RACA = CS_RACA
-        self.NU_CEP = NU_CEP
         self.SG_UF_NOT = SG_UF_NOT
         self.ID_MUNICIP = ID_MUNICIP
         self.NM_LOGRADO = NM_LOGRADO
@@ -58,7 +56,7 @@ class Paciente(object):
             return rd.choice(names, p = names_p/np.sum(names_p)).title()
 
     @staticmethod
-    def generate_surname(surnames, p, length = 10, random_state = np.random.RandomState(0)):
+    def generate_surname(surnames, p, length = 10, random_state = np.random.RandomState(None)):
         '''
             Utiliza uma base com os 1000 sobrenomes mais frequentes no Brasil para
             gerar um sobrenome aleatório como combinação desses sobrenomes da base.
@@ -67,7 +65,7 @@ class Paciente(object):
         return " ".join(rd.choice(surnames, length, p = p, replace = False))
     
     @staticmethod
-    def modify_surname(surnames, surnames_p, surname, rd):
+    def modify_surname(surnames, surnames_p, surname, rd = np.random.RandomState(None)):
         '''
             Recebe o sobrenome e o altera "levemente" de modo a utilizá-lo como
             sobrinome da mãe do paciente.
@@ -127,9 +125,6 @@ def create_patient(TEM_CPF = None, NU_CPF = None, TEM_CNS = None, NU_CNS = None,
     for j in range(surnames.shape[0]):
         surnames_prop.append( 1/float(surnames.loc[j,"proporcao"].split(":")[1].replace(",",".")) )
     surnames.proporcao = surnames_prop/np.sum(surnames_prop)
-
-    surnames.loc[surnames.sobrenome == "Rodrigu\x88s","sobrenome"] = "Rodrigues"
-    surnames.loc[surnames.sobrenome == "GuimarÆes","sobrenome"] = "Guimarães"
     
     if(random_state is None or type(random_state) == type(int)):
         rd = np.random.RandomState(seed = random_state)
