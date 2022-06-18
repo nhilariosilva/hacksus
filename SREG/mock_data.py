@@ -82,9 +82,9 @@ class Paciente(object):
                          surname)
         words = np.array(surname.split())
         # Se o sobrenome contém mais de 3 palavras, remove uma amostra de palavras
-        if(len(words) > 2):
+        if(len(words) > 1):
             # Número de palavras a serem removidas (0 ou 1)
-            words_to_remove = rd.binomial(2, p = 0.5)
+            words_to_remove = rd.binomial(2, p = 0.8)
             # Índices para o sorteio das palavras removidas
             index = np.arange(len(words))
             # Sorteia os índices a serem removidos
