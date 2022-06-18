@@ -24,22 +24,20 @@ function GetOption(){
     var select = document.getElementById('TipoConsulta');
     var value = select.options[select.selectedIndex].value;
     console.log(value);
-    buttonPage = document.getElementById('submit');
+    //buttonPage = document.getElementById('submit');
 //BasesCruzadas, SaoAMesma
     switch (value) {
         case "Existe":
-          $('.hello').show();
-          buttonPage.href="";
+         // buttonPage.href="";
+        document.getElementById('submit').href="bases-cruzadas.html";
         case "BasesCruzadas":
-          $('.five').show();
-          $('.six').show();
-          buttonPage.href="bases-cruzadas.html";
+        document.getElementById('submit').href="bases-cruzadas.html";
           break;
         case "SaoAMesma":
-          $('.five').show();
-          $('.six').show();
-          $('.seven').show();
-          break;
+            console.log("Comparacao");
+          //  buttonPage.href="comparacao.html";
+          document.getElementById('submit').href="comparacao.html";
+            break;
     }
 }
 
