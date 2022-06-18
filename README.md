@@ -1,4 +1,4 @@
-# hacksus
+# IntegraSUS
 Hackathon de parceria Campus Party e Ministério da Saúde para o projeto Inova Dados.
 Encontre mais informações sobre nossa solução em:
 
@@ -9,7 +9,7 @@ Para o treinamento do modelo, foram usados dados gerados aleatoriamente e linkad
 O modelo apresenta a seguinte estrutura
 
 \begin{equation*}
-  P(\text{mesmo indivíduo}) &= \dfrac{1}{1-\exp\{\eta\}}, \ \ \eta = W^t x
+  P(\text{mesmo indivíduo}) = \dfrac{1}{1-\exp\{\eta\}}, \ \ \eta = W^t x
 \end{equation*}
 
 sendo $W$ o vetor de pesos obtido no treinamento do modelo e $x$ o vetor de dados da diferença entre dois indivíduos. P representa a probabilidade associada de uma observação da tabela representar duas vezes o mesmo indivíduo, porém com informação ruidosa.
