@@ -4,6 +4,8 @@ Encontre mais informações sobre nossa solução em:
 
 ### Ana Luiza Martins Cesario, Ludmilla Naud, Natan Hilário da Silva e Nazaré Sampaio.
 
+Link do pitch: https://youtu.be/yRsVfGjhGZM
+
 ## Propósito
 
 O IntegraSUS tem o propósito de unificar diferentes bases de dados do SUS de modo a poupar todo o esforço necessário pelos pesquisados do MS da saúde com a construção de bases de dados para suas pesquisas. Atualmente o processo de linkagem de diferentes sistemas do SUS é muito custoso, sendo feito em sua maioria a mão pelos pesquisadores. Esse processo, uma vez levando meses para ser efetuado, pode ser automatizado através de algoritmos de aprendizado de máquina, fazendo com que a linkagem das bases seja extremamento rápida e confiável ao mesmo tempo.
