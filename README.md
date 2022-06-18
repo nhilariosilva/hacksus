@@ -12,7 +12,7 @@ O IntegraSUS tem o propósito de unificar diferentes bases de dados do SUS de mo
 
 A ideia foi propostas pelas integrantes do grupo Ludmilla e Nazaré, ambas da área de saúde, que sofreram na prática desse problema de falta de unificação dos dados para pesquisa. A construção de um sistema de linkagem de bases não só aumenta a confiança das pesquisas desenvolvidas pelo MS, como também acelera muito toda a linha do caminho da informação.
 
-Obs: Por se tratar de um sistema de linkagem de dados confidenciais do SUS, a plataforma é direcionada para o uso por parte dos funcionários do Ministério da Saúde com a devida autorização para a manipulação desses dados.
+Obs: Por se tratar de um sistema de linkagem de dados confidenciais do SUS, a plataforma é direcionada para o uso por parte dos funcionários do Ministério da Saúde com a devida autorização para a manipulação desses dados. Os dados reais utilizados para verificar a formatação das variáveis foram pegos em https://opendatasus.saude.gov.br/dataset/srag-2021-e-2022.
 
 ## Modelagem
 
