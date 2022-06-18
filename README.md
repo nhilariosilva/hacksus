@@ -14,6 +14,10 @@ A ideia foi propostas pelas integrantes do grupo Ludmilla e Nazaré, ambas da á
 
 Obs: Por se tratar de um sistema de linkagem de dados confidenciais do SUS, a plataforma é direcionada para o uso por parte dos funcionários do Ministério da Saúde com a devida autorização para a manipulação desses dados. Os dados reais utilizados para verificar a formatação das variáveis foram pegos em https://opendatasus.saude.gov.br/dataset/srag-2021-e-2022.
 
+## Plataforma
+
+O site pode ser visualizado a partir do arquivo index.html, presente na pasta https://github.com/nhilariosilva/hacksus/blob/main/plataforma/.
+
 ## Modelagem
 
 Para o treinamento do modelo, foram usados dados gerados aleatoriamente e linkados de forma metódica. Tem-se uma tabela em que cada linha é uma comparação entre dois indivíduos, sendo cada um de uma base. Assim, se a primeira base de dados tem $n$ e a segunda $m$ indivíduos, é criada uma tabela com $n \times m$ linhas. Como os dados inicialmente são aleatórios tem-se a informação de quais indivíduos são os mesmos. Essa informação (1 se são o mesmo indivíduo, 0 se são diferentes) é usada para o ajuste de um modelo de Regressão Logística, que é feito sobre as variáveis de diferença obtidas entre os pares de indivíduos. A métrica usada para identificar diferença entre os nomes foi a Distância de Leveshtein.
